@@ -1,0 +1,17 @@
+/* Global Styles for Suthorn Web */
+body { font-family: 'IBM Plex Sans Thai', sans-serif; background-color: #f4f1ea; }
+h1, h2, h3, h4, h5, h6, .nav-font { font-family: 'Bai Jamjuree', serif; }
+
+.bg-wood-texture {
+    background-color: #1b4332;
+    background-image: radial-gradient(#2d6a4f 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Nav styles */
+.nav-link {
+    @apply text-gray-600 hover:text-wood border-b-[3px] border-transparent hover:border-wood px-1 py-4 font-medium transition-all duration-300;
+}
+.nav-link.active {
+    @apply text-suthorn border-suthorn font-bold;
+}
