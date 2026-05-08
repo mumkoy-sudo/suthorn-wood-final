@@ -24,7 +24,7 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- ผลิตภัณฑ์ Header -->
+    <!-- ผลิตภัณฑ์ Header (Grand Header เดิม) -->
     <section class="relative pt-32 pb-48 bg-suthorn overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay scale-110" style="background-image: url('1776913002043_1---e0ae2b66-c898-48ed-953e-5febe0300ad1.jpg');"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-suthorn-dark/40 to-suthorn-dark/90"></div>
@@ -46,13 +46,15 @@
             <div class="flex flex-col md:flex-row gap-20 items-center mb-40">
                 <div class="md:w-1/2">
                     <div class="relative group">
-                        <div class="absolute inset-0 bg-wood translate-x-4 translate-y-4 rounded-2xl -z-10 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-500 shadow-xl"></div>
+                        <div class="absolute inset-0 bg-wood translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl"></div>
                         <img src="new_live_edge_slabs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้แผ่นใหญ่">
                     </div>
                 </div>
                 <div class="md:w-1/2">
+                    <!-- ตัด (Live-Edge Slabs) ออก -->
                     <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight">ไม้แผ่นใหญ่ลวดลายธรรมชาติ</h2>
-                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light text-justify">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่พิเศษ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
+                    <!-- ตัดเส้นสีทองใต้อักษรออก (ไม่มี div bg-wood/30 แล้ว) -->
+                    <p class="text-gray-700 text-xl leading-relaxed font-light">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่พิเศษ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
                 </div>
             </div>
 
@@ -60,13 +62,16 @@
             <div class="flex flex-col md:flex-row-reverse gap-20 items-center mb-40">
                 <div class="md:w-1/2">
                     <div class="relative group">
-                        <div class="absolute inset-0 bg-suthorn translate-x-[-1rem] translate-y-4 rounded-2xl -z-10 group-hover:translate-x-[-1.5rem] transition-transform duration-500 shadow-xl"></div>
+                        <div class="absolute inset-0 bg-suthorn translate-x-[-1rem] translate-y-4 rounded-2xl -z-10 shadow-xl"></div>
                         <img src="new_structural_timber_logs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้โครงสร้าง">
                     </div>
                 </div>
                 <div class="md:w-1/2 text-right">
                     <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8">ไม้เพื่อแปรรูปทำโครงสร้าง</h2>
-                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light text-right">ไม้โครงสร้างหน้าตัดขนาดใหญ่สามารถแปรรูปได้ตามขนาดที่ต้องการ ทนทาน รองรับน้ำหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้าน ไม้เสาคานและงานวิศวกรรมทางน้ำ</p>
+                    <!-- จัดระเบียบตัวอักษรไม่ให้คำว่า น้ำ ตกบรรทัด -->
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">
+                        ไม้โครงสร้างหน้าตัดขนาดใหญ่สามารถแปรรูปได้ตามขนาดที่ต้องการ ทนทาน รองรับน้ำหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้าน ไม้เสาคานและงานวิศวกรรมทางน้ำ
+                    </p>
                     <ul class="space-y-4 text-gray-700 text-lg inline-block text-left">
                         <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wood text-2xl"></i> <span>สามารถแปรรูปได้ตามขนาดที่ต้องการ</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wood text-2xl"></i> <span>ตัดตามสเปกและลดการแตกร้าวที่หัวไม้</span></li>
@@ -75,18 +80,19 @@
                 </div>
             </div>
 
-            <!-- Category 3: ไม้แปรรูปตกแต่ง (เพิ่มสีรองหลัง และปรับตามสั่ง) -->
+            <!-- Category 3 -->
             <div class="flex flex-col md:flex-row gap-20 items-center">
                 <div class="md:w-1/2">
                     <div class="relative group">
-                        <!-- เพิ่มกรอบสีรองหลัง (Shadow box) สีเขียว เพื่อให้เหมือน 2 รูปบน -->
-                        <div class="absolute inset-0 bg-suthorn translate-x-4 translate-y-4 rounded-2xl -z-10 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-500 shadow-xl"></div>
+                        <!-- เพิ่มภาพซ้อน (Background Box) สีเขียว -->
+                        <div class="absolute inset-0 bg-suthorn translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl"></div>
                         <img src="new_architectural_woodwork.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้แปรรูปตกแต่ง">
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight">ไม้แปรรูปตกแต่ง</h2>
-                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light text-justify">สักทองลายธรรมชาติสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการอบไม้และผึ่งลมเพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
+                    <!-- ตัด (Architectural Woodwork) ออก และจัดให้สวยงาม -->
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight text-left">ไม้แปรรูปตกแต่ง</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">สักทองลายธรรมชาติสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการอบไม้และผึ่งลมเพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
                     <div class="bg-suthorn p-8 rounded-xl text-white shadow-xl border-l-8 border-wood">
                          <p class="text-2xl font-bold nav-font mb-2 text-wood-light">High-End Finishing</p>
                          <p class="text-paper/90 font-light text-xl leading-relaxed">เหมาะสำหรับงานตกแต่งระดับไฮเอนด์ที่เน้นความเนียนละเอียดของผิวสัมผัส</p>
