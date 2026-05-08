@@ -24,60 +24,80 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- ผลิตภัณฑ์ Header (แก้กลับตามรูป 590: พื้นสีเทาจาง อักษรขาวแบบเดิมที่พี่ม่ำวงแดง) -->
-    <section class="relative pt-16 md:pt-24 pb-20 bg-suthorn">
-        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('1776913002043_1---e0ae2b66-c898-48ed-953e-5febe0300ad1.jpg');"></div>
+    <!-- ผลิตภัณฑ์ Header (บังคับใช้สไตล์อลังการ พื้นเขียว อักษรขาว เส้นทอง ตามรูป 1 เป๊ะๆ) -->
+    <section class="relative pt-32 pb-48 bg-[#1b4332] overflow-hidden">
+        <!-- 1. Background แถบสีเขียวเข้ม และมีรูปภาพจางๆ ซ้อนอยู่ -->
+        <div class="absolute inset-0 bg-[url('1776913002043_1---e0ae2b66-c898-48ed-953e-5febe0300ad1.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay scale-110"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-[#1b4332]/80 to-[#1b4332]"></div>
+        
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white nav-font mb-4 drop-shadow-sm">ผลิตภัณฑ์ของเรา</h1>
-            <div class="w-16 h-1 bg-wood mx-auto mb-6"></div>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto drop-shadow-sm">คลังไม้แปรรูปคุณภาพสูง และสินค้าพิเศษ พร้อมตอบสนองความต้องการของลูกค้าทุกรูปแบบ</p>
+            <!-- 2. อักษรภาษาอังกฤษตัวบาง สีขาวด้านบนสุดกึ่งกลาง -->
+            <span class="inline-block text-white/60 tracking-[0.4em] uppercase text-sm mb-6 font-light">Premium Wood Selection</span>
+            
+            <!-- 3. หัวข้อภาษาไทย ตัวหนา สีขาว ขนาดใหญ่ยักษ์ -->
+            <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลิตภัณฑ์ของเรา</h1>
+            
+            <!-- 4. เส้นคั่นบางๆ สีส้มทอง ใต้หัวข้อ -->
+            <div class="w-48 h-[3px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
+            
+            <!-- 5. คำบรรยายตัวบาง สีขาวนวลด้านล่างสุดของแถบเขียว -->
+            <p class="text-white/90 text-2xl md:text-4xl font-light leading-relaxed drop-shadow-md">
+                คลังไม้แปรรูปคุณภาพสูง และสินค้าพิเศษ พร้อมตอบสนองความต้องการของลูกค้าในทุกรูปแบบ
+            </p>
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="py-32">
         <div class="max-w-7xl mx-auto px-4">
             
             <!-- Category 1 -->
-            <div class="flex flex-col md:flex-row gap-12 items-center mb-24">
+            <div class="flex flex-col md:flex-row gap-20 items-center mb-40">
                 <div class="md:w-1/2">
-                    <img src="new_live_edge_slabs.jpg" class="rounded-lg shadow-xl w-full h-[400px] object-cover" alt="ไม้แผ่นใหญ่">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-wood translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl"></div>
+                        <img src="new_live_edge_slabs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้แผ่นใหญ่">
+                    </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-4">ไม้แผ่นใหญ่ลวดลายธรรมชาติ</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่พิเศษ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight">ไม้แผ่นใหญ่ลวดลายธรรมชาติ</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่พิเศษ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
                 </div>
             </div>
 
             <!-- Category 2 -->
-            <div class="flex flex-col md:flex-row-reverse gap-12 items-center mb-24">
+            <div class="flex flex-col md:flex-row-reverse gap-20 items-center mb-40">
                 <div class="md:w-1/2">
-                    <img src="new_structural_timber_logs.jpg" class="rounded-lg shadow-xl w-full h-[400px] object-cover" alt="ไม้โครงสร้าง">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-suthorn translate-x-[-1rem] translate-y-4 rounded-2xl -z-10 shadow-xl opacity-20"></div>
+                        <img src="new_structural_timber_logs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้โครงสร้าง">
+                    </div>
                 </div>
                 <div class="md:w-1/2 text-right">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-4 text-right">ไม้เพื่อแปรรูปทำโครงสร้าง</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-right">ไม้โครงสร้างหน้าตัดขนาดใหญ่สามารถแปรรูปได้ตามขนาดที่ต้องการ ทนทาน รองรับน้ำหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้าน ไม้เสาคานและงานวิศวกรรมทางน้ำ</p>
-                    <ul class="space-y-2 text-gray-700 mb-8 inline-block text-left">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-wood"></i> <span>สามารถแปรรูปได้ตามขนาดที่ต้องการ</span></li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-wood"></i> <span>ตัดตามสเปกและลดการแตกร้าวที่หัวไม้</span></li>
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8">ไม้เพื่อแปรรูปทำโครงสร้าง</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">ไม้โครงสร้างหน้าตัดขนาดใหญ่สามารถแปรรูปได้ตามขนาดที่ต้องการ ทนทาน รองหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้าน ไม้เสาคานและงานวิศวกรรมทางน้ำ</p>
+                    <ul class="space-y-4 text-gray-700 text-lg inline-block text-left">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wood text-2xl"></i> <span>สามารถแปรรูปได้ตามขนาดที่ต้องการ</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-wood text-2xl"></i> <span>ตัดตามสเปกและลดการแตกร้าวที่หัวไม้</span></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Category 3 -->
-            <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex flex-col md:flex-row gap-20 items-center">
                 <div class="md:w-1/2">
                     <div class="relative group">
-                        <!-- เพิ่มภาพซ้อน (Background Box) สีเขียว ตามที่สั่งก่อนหน้านี้แต่คุมโทนให้สวยงาม -->
-                        <div class="absolute inset-0 bg-suthorn translate-x-4 translate-y-4 rounded-xl -z-10 shadow-lg"></div>
-                        <img src="new_architectural_woodwork.jpg" class="rounded-xl shadow-xl w-full h-[400px] object-cover" alt="ไม้แปรรูปตกแต่ง">
+                        <!-- เพิ่มภาพซ้อน (Background Box) สีเขียว -->
+                        <div class="absolute inset-0 bg-suthorn translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl opacity-20"></div>
+                        <img src="new_architectural_woodwork.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover" alt="ไม้แปรรูปตกแต่ง">
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-4">ไม้แปรรูปตกแต่ง</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">สักทองลายธรรมชาติสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการอบไม้และผึ่งลมเพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
-                    <div class="mt-6 space-y-2">
-                         <p class="text-xl font-bold text-suthorn nav-font">High-End Finishing</p>
-                         <p class="text-gray-600 leading-relaxed">เหมาะสำหรับงานตกแต่งระดับไฮเอนด์ที่เน้นความเนียนละเอียดของผิวสัมผัส</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight text-left">ไม้แปรรูปตกแต่ง</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">สักทองลายธรรมชาติสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการอบไม้และผึ่งลมเพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
+                    <!-- กล่อง High-End Finishing ใช้สีดำกลมกลืนตามสั่ง -->
+                    <div class="mt-8 space-y-4">
+                         <p class="text-3xl font-bold nav-font text-suthorn">High-End Finishing</p>
+                         <p class="text-gray-700 text-2xl font-light leading-relaxed italic">เหมาะสำหรับงานตกแต่งระดับไฮเอนด์ที่เน้นความเนียนละเอียดของผิวสัมผัส</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +106,6 @@
     </section>
 
     <!-- FOOTER INJECTED -->
-    <div id="header-container"></div>
     <div id="footer-container"></div>
 
     <script src="inline.js"></script>
