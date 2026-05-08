@@ -19,64 +19,78 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <div class="max-w-7xl mx-auto px-4 pt-20 md:pt-32 pb-16">
-        <!-- Headline Section (แก้ไขให้อลังการตามวงแดง) -->
-        <div class="text-center mb-24">
-            <h1 class="text-6xl md:text-8xl font-bold text-suthorn nav-font mb-8 tracking-tight drop-shadow-sm">ผลงานของเรา</h1>
-            <div class="w-48 h-1.5 bg-wood mx-auto mb-10 rounded-full"></div>
-            <p class="text-gray-700 text-2xl md:text-3xl font-medium leading-relaxed max-w-4xl mx-auto">
-                จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ
+    <!-- ผลงาน Header (ปรับสไตล์ตามรูปที่ 1 เป๊ะๆ) -->
+    <section class="relative pt-32 pb-48 bg-suthorn overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay scale-110" style="background-image: url('warehouse_inside.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-suthorn-dark via-suthorn/60 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <!-- ภาษาอังกฤษตัวบาง สีขาวด้านบน -->
+            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-xs mb-4 font-light">The Masterpiece Gallery</span>
+            <!-- หัวข้อไทย ตัวหนา สีขาว -->
+            <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลงานของเรา</h1>
+            <!-- เส้นคั่นบาง สีส้มทอง -->
+            <div class="w-48 h-[2px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
+            <!-- สโลแกน ตัวบาง สีขาวล่างสุด -->
+            <p class="text-white/90 text-2xl md:text-4xl font-light italic leading-relaxed drop-shadow-md">
+                "จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ"
             </p>
         </div>
+    </section>
 
-        <!-- Yacht Series -->
-        <div class="mb-32">
-            <h2 class="text-3xl font-bold text-gray-900 nav-font mb-12 border-l-8 border-wood pl-6">| Maritime & Luxury Yachts</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-                <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
-                    <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
-                    <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
-                    <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover">
+    <!-- CONTENT -->
+    <section class="py-32">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <!-- Category 1 -->
+            <div class="mb-32">
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Maritime & Luxury Yachts</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Heavy Duty Construction -->
-        <div class="mb-32">
-            <h2 class="text-3xl font-bold text-gray-900 nav-font mb-12 border-l-8 border-wood pl-6">| Industrial & Boat Building</h2>
-            <div class="flex flex-col md:flex-row gap-8 items-stretch">
-                <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
-                    <img src="1776913044438_1---7c86ef0a-cfff-4257-8981-571b1ce7fb9b.png" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
-                    <img src="1776913042824_1---7a28586d-1902-40f1-93d1-d9d5090c3c5f.png" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
-                    <img src="1776913046413_1---986c26bb-e67c-4e1b-ad23-6899439a030d.png" class="w-full h-full object-cover">
+            <!-- Category 2 -->
+            <div class="mb-32">
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Industrial & Boat Building</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913044438_1---7c86ef0a-cfff-4257-8981-571b1ce7fb9b.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913042824_1---7a28586d-1902-40f1-93d1-d9d5090c3c5f.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913046413_1---986c26bb-e67c-4e1b-ad23-6899439a030d.png" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Custom Vehicles -->
-        <div>
-            <h2 class="text-3xl font-bold text-gray-900 nav-font mb-12 border-l-8 border-wood pl-6">| Custom Trucks & Specialties</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center items-start">
-                <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
-                    <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
-                    <h3 class="text-3xl font-bold text-suthorn nav-font">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
-                    <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
-                    <h3 class="text-3xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
+            <!-- Category 3 -->
+            <div>
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Custom Trucks & Specialties</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center items-start">
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                        <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                        <h3 class="text-3xl font-bold text-suthorn nav-font">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                        <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                        <h3 class="text-3xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </section>
 
     <!-- FOOTER INJECTED -->
     <div id="footer-container"></div>
