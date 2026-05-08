@@ -103,6 +103,10 @@ const footerCode = `<!-- Footer (Refined Version from P'Mum) -->
                             <i class="fa-brands fa-facebook text-[#FFD700] mr-4 w-5 text-xl"></i>
                             <a href="https://www.facebook.com/p/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%AA%E0%B8%B8%E0%B8%98%E0%B8%A3-61552097488156/" target="_blank" class="hover:text-white transition">โรงไม้สุธร</a>
                         </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-facebook text-[#FFD700] mr-4 w-5 text-xl"></i>
+                            <a href="https://www.facebook.com/p/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%AA%E0%B8%B8%E0%B8%98%E0%B8%A3-61552097488156/" target="_blank" class="hover:text-white transition">โรงไม้สุธร</a>
+                        </li>
                     </ul>
                 </div>
             </div>
