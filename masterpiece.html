@@ -34,24 +34,27 @@
             <p class="text-gray-600 text-lg">จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ</p>
         </div>
 
-        <!-- Yacht Series (Fixed Layout based on P'Mum's screenshot) -->
+        <!-- Yacht Series (New Masonry/Asymmetric Layout) -->
         <h2 class="text-3xl font-bold text-gray-900 nav-font mb-8 border-l-4 border-wood pl-4">Maritime & Luxury Yachts</h2>
-        <div class="flex flex-col md:flex-row gap-6 mb-20 items-stretch">
-            <!-- Left Large Image (Square aspect ratio to match screenshot better) -->
-            <div class="md:w-1/2">
-                <div class="rounded-xl shadow-lg overflow-hidden h-full min-h-[400px] md:min-h-[500px]">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+            <!-- 1. Large Main Image (Landscape) -->
+            <div class="md:col-span-8">
+                <div class="rounded-xl shadow-lg overflow-hidden h-[300px] md:h-[450px]">
                     <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover" alt="Classic Wooden Schooner">
                 </div>
             </div>
             
-            <!-- Right Side Grid (Two stacked images) -->
-            <div class="md:w-1/2 flex flex-col gap-6">
-                <!-- Top Right (Horizontal Rectangular) -->
-                <div class="h-1/2 rounded-xl shadow-lg overflow-hidden bg-white">
-                    <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover" alt="Interior Detail">
+            <!-- 2. The Red-Cycled Image (Now in a VERTICAL container) -->
+            <div class="md:col-span-4 md:row-span-2">
+                <div class="rounded-xl shadow-lg overflow-hidden h-full min-h-[400px] bg-white border border-gray-100">
+                    <!-- This container matches the image's vertical aspect ratio -->
+                    <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover" alt="Interior Detail Vertical">
                 </div>
-                <!-- Bottom Right (Horizontal Rectangular) -->
-                <div class="h-1/2 rounded-xl shadow-lg overflow-hidden bg-white">
+            </div>
+
+            <!-- 3. Bottom Landscape Image -->
+            <div class="md:col-span-8">
+                <div class="rounded-xl shadow-lg overflow-hidden h-[300px] md:h-[450px]">
                     <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover" alt="Deck Woodwork">
                 </div>
             </div>
@@ -75,11 +78,11 @@
         <h2 class="text-3xl font-bold text-gray-900 nav-font mb-8 border-l-4 border-wood pl-4">Custom Trucks & Specialties</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
-                <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-lg h-80 w-full object-cover mb-4">
+                <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-lg h-96 w-full object-cover mb-4">
                 <h3 class="text-xl font-bold text-suthorn">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
-                <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-lg h-80 w-full object-cover mb-4">
+                <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-lg h-96 w-full object-cover mb-4">
                 <h3 class="text-xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
             </div>
         </div>
