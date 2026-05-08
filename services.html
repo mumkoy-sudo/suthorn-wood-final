@@ -4,32 +4,13 @@
     <meta charset="UTF-8">
     <title>บริการของเรา | SUTHORN TIMBER</title>
     
-    <!-- SEO Optimization Meta Tags -->
-    <meta name="description" content="โรงไม้สุธร (Suthorn Timber) ผู้จำหน่ายไม้แปรรูป ไม้โครงสร้าง ไม้แผ่นใหญ่ (Live-edge) และบริการรับสั่งทำชิ้นงานไม้คุณภาพระดับสากล ประสบการณ์กว่า 45 ปี จัดส่งทั่วประเทศ">
-    <meta name="keywords" content="โรงเลื่อย, โรงไม้, ไม้แปรรูป, ไม้สัก, ไม้เนื้อแข็ง, ไม้แผ่นใหญ่, Live edge, งานไม้สั่งทำ, ต่อเรือ, พื้นไม้, ไม้ปูระเบียง, สมุทรปราการ">
-    <meta name="author" content="Suthorn Timber Co., Ltd.">
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="โรงไม้สุธร | สั่งทำไม้แปรรูปและงานไม้พรีเมียมครบวงจร">
-    <meta property="og:description" content="ศูนย์รวมงานไม้อุตสาหกรรม บริการไม้แปรรูปโครงสร้างและงานตกแต่งภายในระดับไฮเอนด์ ด้วยเครื่องจักรมาตรฐานและประสบการณ์ฝีมือช่างกว่า 45 ปี">
-    <meta property="og:image" content="https://suthorn.surge.sh/bg_hero_new.jpg">
-    <meta property="og:url" content="https://suthorn.surge.sh/">
-    <meta property="og:type" content="website">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', },
-                        wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', },
-                        paper: { DEFAULT: '#f4f1ea', white: '#ffffff', }
-                    }
-                }
-            }
+            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } } } }
         }
     </script>
 </head>
@@ -38,53 +19,61 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- Services Header -->
-    <section class="pt-16 md:pt-24 pb-24 bg-[#1b4332] text-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('1776913002189_1---06273122-01e2-4428-b3e2-963ea775ad56.jpg')] bg-cover bg-center opacity-20"></div>
-        <div class="relative z-10">
-            <h1 class="text-5xl font-bold text-white nav-font mb-4">บริการมาตรฐานระดับสากล</h1>
-            <p class="text-gray-300 text-lg">จากเครื่องเลื่อยอุตสาหกรรมในโรงงาน สู่การติดตั้งที่หน้างานด้วยช่างฝีมือ</p>
+    <!-- Services Header (อลังการ) -->
+    <section class="relative pt-32 pb-40 bg-suthorn overflow-hidden">
+        <div class="absolute inset-0 bg-[url('1776913002189_1---06273122-01e2-4428-b3e2-963ea775ad56.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-suthorn via-transparent to-black/40"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <span class="inline-block bg-wood text-white px-6 py-2 rounded-full text-sm font-bold tracking-widest mb-8 shadow-xl">EXPERTISE & PRECISION</span>
+            <h1 class="text-6xl md:text-8xl font-bold text-white nav-font mb-6 drop-shadow-2xl">บริการมาตรฐานสากล</h1>
+            <div class="w-32 h-2 bg-wood-light mx-auto mb-8 rounded-full"></div>
+            <p class="text-gray-200 text-xl md:text-3xl font-light max-w-4xl mx-auto leading-relaxed">
+                จากเครื่องเลื่อยอุตสาหกรรมในโรงงาน สู่การติดตั้งที่หน้างานด้วยช่างฝีมือผู้ชำนาญการกว่า 45 ปี
+            </p>
         </div>
     </section>
 
-    <section class="py-20 max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Cards Section (ตัวอักษรใหญ่ขึ้น) -->
+    <section class="py-32 max-w-7xl mx-auto px-4 -mt-20 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
              <!-- Card 1 -->
-             <div class="bg-white p-6 md:p-10 border-t-4 border-wood shadow-lg hover:-translate-y-2 transition-transform">
-                <div class="text-4xl text-suthorn mb-6"><i class="fa-solid fa-comments"></i></div>
-                <h3 class="text-2xl font-bold text-suthorn mb-4 nav-font">ให้คำปรึกษาจัดหาไม้</h3>
-                <p class="text-gray-600 font-light">ประเมินและแนะนำพันธุกรรมไม้ที่เหมาะสมกับงานก่อสร้างและการตกแต่ง เพื่อความยั่งยืนของโครงสร้าง</p>
+             <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-comments"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">ให้คำปรึกษาจัดหาไม้</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">ประเมินและแนะนำพันธุกรรมไม้ที่เหมาะสมกับงานก่อสร้างและการตกแต่ง เพื่อความยั่งยืนของโครงสร้าง</p>
             </div>
-            <!-- Card 2 (แก้ไขตามสั่ง) -->
-            <div class="bg-white p-6 md:p-10 border-t-4 border-wood shadow-lg hover:-translate-y-2 transition-transform">
-                <div class="text-4xl text-suthorn mb-6"><i class="fa-solid fa-ruler-combined"></i></div>
-                <h3 class="text-2xl font-bold text-suthorn mb-4 nav-font">ออกแบบและคำนวณการใช้ไม้</h3>
-                <p class="text-gray-600 font-light">บริการร่างแบบและปรับสัดส่วนโครงสร้าง คำนวณการใช้ไม้อย่างคุ้มค่ามากที่สุด</p>
+            <!-- Card 2 -->
+            <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-ruler-combined"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">ออกแบบและคำนวณการใช้ไม้</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">บริการร่างแบบและปรับสัดส่วนโครงสร้าง คำนวณการใช้ไม้อย่างคุ้มค่ามากที่สุด</p>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white p-6 md:p-10 border-t-4 border-wood shadow-lg hover:-translate-y-2 transition-transform">
-                <div class="text-4xl text-suthorn mb-6"><i class="fa-solid fa-hammer"></i></div>
-                <h3 class="text-2xl font-bold text-suthorn mb-4 nav-font">บริการประกอบชิ้นงาน</h3>
-                <p class="text-gray-600 font-light">ขึ้นโครงสร้างและประกอบไม้ผสมโลหะ รองรับการดัดโค้ง งานเข้าลิ่ม และเฟอร์นิเจอร์สั่งพิเศษ</p>
+            <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-hammer"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">บริการประกอบชิ้นงาน</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">ขึ้นโครงสร้างและประกอบไม้ผสมโลหะ รองรับการดัดโค้ง งานเข้าลิ่ม และเฟอร์นิเจอร์สั่งพิเศษ</p>
             </div>
         </div>
     </section>
 
-    <!-- Highlight Workshop Process (แก้ไขตามสั่ง) -->
-    <section class="py-20 bg-paper">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold text-suthorn nav-font mb-6">ความเชี่ยวชาญในทุกขั้นตอน</h2>
-                <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+    <!-- Highlight Workshop Process -->
+    <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-20">
+            <div class="lg:w-1/2">
+                <h2 class="text-5xl md:text-6xl font-bold text-suthorn nav-font mb-10 leading-tight">ความเชี่ยวชาญ<br>ในทุกขั้นตอน</h2>
+                <div class="w-20 h-1.5 bg-wood mb-10"></div>
+                <p class="text-gray-700 text-2xl mb-12 leading-relaxed font-light">
                     บริษัทของเราให้ความใส่ใจในการทำงานของทีมช่างตั้งแต่ การขึ้นรูป การเคลือบทำสี ไปจนถึงกำหนดเวลาในการส่งมอบงานที่เที่ยงตรง
                 </p>
-                <div class="grid grid-cols-2 gap-4 mt-8">
-                    <img src="1776913002322_1---760db1dc-42e0-414b-80ff-72aec0f02747.jpg" class="rounded shadow object-cover h-40 w-full">
-                    <img src="1776913002963_1---4402a14b-2f84-46ca-b789-a398e6a32fbf.jpg" class="rounded shadow object-cover h-40 w-full">
+                <div class="grid grid-cols-2 gap-6 mt-12">
+                    <img src="1776913002322_1---760db1dc-42e0-414b-80ff-72aec0f02747.jpg" class="rounded-xl shadow-lg object-cover h-56 w-full hover:scale-105 transition-transform">
+                    <img src="1776913002963_1---4402a14b-2f84-46ca-b789-a398e6a32fbf.jpg" class="rounded-xl shadow-lg object-cover h-56 w-full hover:scale-105 transition-transform">
                 </div>
             </div>
-            <div class="md:w-1/2">
-                <img src="file_287---627cf3aa-5010-448d-aead-db0b2a5ef258.jpg" class="rounded-xl shadow-2xl h-[500px] w-full object-cover">
+            <div class="lg:w-1/2 relative">
+                <div class="absolute inset-0 bg-suthorn translate-x-6 translate-y-6 rounded-2xl opacity-10"></div>
+                <img src="file_287---627cf3aa-5010-448d-aead-db0b2a5ef258.jpg" class="relative z-10 rounded-2xl shadow-3xl h-[600px] w-full object-cover">
             </div>
         </div>
     </section>
