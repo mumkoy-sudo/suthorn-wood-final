@@ -16,46 +16,43 @@
 </head>
 <body class="text-gray-800 antialiased bg-paper">
     
-    <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- ผลงาน Header (แก้ไขแบบเน้นเขียวเข้ม ตัวอักษรขาว เส้นทอง ตามรูป 1) -->
-    <section class="relative pt-32 pb-48 bg-suthorn overflow-hidden">
+    <!-- Header Section (FORCE GREEN BACKGROUND - Style Image 1) -->
+    <section class="relative pt-32 pb-48 bg-[#1b4332] overflow-hidden">
+        <!-- Background Overlay Image -->
         <div class="absolute inset-0 bg-[url('warehouse_inside.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay scale-110"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-suthorn-dark/40 to-suthorn-dark/90"></div>
+        <!-- Strong Dark Gradient to ensure Green tone -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-[#1b4332]/80 to-[#1b4332]"></div>
         
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-sm mb-6 font-light">The Masterpiece Gallery</span>
+            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-sm mb-4 font-light">The Masterpiece Gallery</span>
             <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลงานของเรา</h1>
-            <!-- เส้นคั่นทองแบบบาง (เหมือนรูป 1) -->
+            <!-- The thin orange-gold separator line -->
             <div class="w-48 h-[3px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
-            <p class="text-white/90 text-2xl md:text-4xl font-light italic leading-relaxed">
+            <p class="text-white text-3xl md:text-5xl font-light italic leading-relaxed drop-shadow-md">
                 "จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ"
             </p>
         </div>
     </section>
 
-    <!-- CONTENT (พื้นสีครีมสว่าง) -->
     <section class="py-32">
         <div class="max-w-7xl mx-auto px-4">
-            
-            <!-- Category 1 -->
+            <!-- Content Sections below remain as they were -->
             <div class="mb-32">
                 <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Maritime & Luxury Yachts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
                         <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover">
                     </div>
-                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
                         <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover">
                     </div>
-                    <div class="rounded-2xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
                         <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
-
-            <!-- Category 2 -->
             <div class="mb-32">
                 <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Industrial & Boat Building</h2>
                 <div class="flex flex-col md:flex-row gap-8 items-stretch">
@@ -70,28 +67,20 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Category 3 -->
-            <div>
-                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Custom Trucks & Specialties</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center items-start">
-                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
-                        <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
-                        <h3 class="text-3xl font-bold text-suthorn nav-font">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
-                        <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
-                        <h3 class="text-3xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center items-start">
+                <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                    <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                    <h3 class="text-3xl font-bold text-suthorn nav-font">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                    <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                    <h3 class="text-3xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- FOOTER INJECTED -->
     <div id="footer-container"></div>
-
     <script src="inline.js"></script>
 </body>
 </html>
