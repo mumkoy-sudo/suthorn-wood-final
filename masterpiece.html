@@ -19,30 +19,23 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- ผลงาน Header (ปรับให้เหมือนเป๊ะตามมาตรฐานรูปที่ 1 หน้าบริการ) -->
+    <!-- ผลงาน Header (แก้ไขแบบเน้นเขียวเข้ม ตัวอักษรขาว เส้นทอง ตามรูป 1) -->
     <section class="relative pt-32 pb-48 bg-suthorn overflow-hidden">
-        <!-- 1. Background แถบสีเขียวเข้ม และมีรูปภาพจางๆ ซ้อนอยู่ -->
-        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay scale-110" style="background-image: url('warehouse_inside.jpg');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-suthorn-dark via-suthorn/60 to-transparent"></div>
+        <div class="absolute inset-0 bg-[url('warehouse_inside.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay scale-110"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-suthorn-dark/40 to-suthorn-dark/90"></div>
         
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <!-- 2. อักษรภาษาอังกฤษตัวบาง สีขาวด้านบนสุดกึ่งกลาง -->
-            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-xs mb-4 font-light">The Masterpiece Gallery</span>
-            
-            <!-- 3. หัวข้อภาษาไทย ตัวหนา สีขาว ขนาดใหญ่ -->
+            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-sm mb-6 font-light">The Masterpiece Gallery</span>
             <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลงานของเรา</h1>
-            
-            <!-- 4. เส้นคั่นบางๆ สีส้มทอง ใต้หัวข้อ -->
-            <div class="w-48 h-[2px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
-            
-            <!-- 5. สโลแกน ตัวบาง สีขาวนวลด้านล่างสุดของแถบเขียว -->
-            <p class="text-white/90 text-2xl md:text-4xl font-light italic leading-relaxed drop-shadow-md">
+            <!-- เส้นคั่นทองแบบบาง (เหมือนรูป 1) -->
+            <div class="w-48 h-[3px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
+            <p class="text-white/90 text-2xl md:text-4xl font-light italic leading-relaxed">
                 "จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ"
             </p>
         </div>
     </section>
 
-    <!-- CONTENT (พื้นสีครีมสว่างตามปกติ) -->
+    <!-- CONTENT (พื้นสีครีมสว่าง) -->
     <section class="py-32">
         <div class="max-w-7xl mx-auto px-4">
             
