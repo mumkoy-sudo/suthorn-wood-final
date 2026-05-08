@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <!-- CONTENT (หน้า 12-13) -->
+    <!-- CONTENT -->
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-4">
             
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <!-- One-Stop Wood Service Section (Footing) -->
+    <!-- 4. One-Stop Wood Service Section (Footing) -->
     <section class="py-0 relative">
         <div class="flex flex-col md:flex-row">
             <div class="md:w-1/2 bg-suthorn text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-wood-texture">
@@ -96,19 +96,5 @@
     <div id="footer-container"></div>
 
     <script src="inline.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Active link logic
-            const title = document.title;
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(l => {
-                const text = l.textContent.trim();
-                if (title.includes(text) || (text === 'หน้าแรก' && title.includes('Classic'))) {
-                    l.classList.add('text-suthorn', 'border-suthorn', 'font-bold');
-                    l.classList.remove('text-gray-600', 'border-transparent');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
