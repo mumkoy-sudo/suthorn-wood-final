@@ -34,20 +34,25 @@
             <p class="text-gray-600 text-lg">จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ</p>
         </div>
 
-        <!-- Yacht Series -->
+        <!-- Yacht Series (Fixed Layout based on P'Mum's screenshot) -->
         <h2 class="text-3xl font-bold text-gray-900 nav-font mb-8 border-l-4 border-wood pl-4">Maritime & Luxury Yachts</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <!-- Left: Classic Wooden Schooner (REMOVED OVERLAY TEXT COMPLETELY) -->
-            <div class="relative overflow-hidden rounded-xl shadow-lg h-[400px] md:h-[600px] bg-white">
-                <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-contain" alt="Classic Wooden Schooner">
-            </div>
-            <!-- Right: Sub-images (SET TO OBJECT-CONTAIN FOR FULL VIEW) -->
-            <div class="grid grid-rows-2 gap-8 h-[400px] md:h-[600px]">
-                <div class="rounded-xl shadow-lg overflow-hidden h-full bg-white flex items-center justify-center">
-                    <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-contain" alt="งานไม้เรือ 1">
+        <div class="flex flex-col md:flex-row gap-6 mb-20 items-stretch">
+            <!-- Left Large Image (Square aspect ratio to match screenshot better) -->
+            <div class="md:w-1/2">
+                <div class="rounded-xl shadow-lg overflow-hidden h-full min-h-[400px] md:min-h-[500px]">
+                    <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover" alt="Classic Wooden Schooner">
                 </div>
-                <div class="rounded-xl shadow-lg overflow-hidden h-full bg-white flex items-center justify-center">
-                    <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-contain" alt="งานไม้เรือ 2">
+            </div>
+            
+            <!-- Right Side Grid (Two stacked images) -->
+            <div class="md:w-1/2 flex flex-col gap-6">
+                <!-- Top Right (Horizontal Rectangular) -->
+                <div class="h-1/2 rounded-xl shadow-lg overflow-hidden bg-white">
+                    <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover" alt="Interior Detail">
+                </div>
+                <!-- Bottom Right (Horizontal Rectangular) -->
+                <div class="h-1/2 rounded-xl shadow-lg overflow-hidden bg-white">
+                    <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover" alt="Deck Woodwork">
                 </div>
             </div>
         </div>
@@ -55,14 +60,14 @@
         <!-- Heavy Duty Construction -->
         <h2 class="text-3xl font-bold text-gray-900 nav-font mb-8 border-l-4 border-wood pl-4">Industrial & Boat Building</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-            <div class="rounded-xl shadow-lg overflow-hidden h-80 bg-white">
-                <img src="1776913044438_1---7c86ef0a-cfff-4257-8981-571b1ce7fb9b.png" class="w-full h-full object-contain">
+            <div class="rounded-xl shadow-lg overflow-hidden h-72">
+                <img src="1776913044438_1---7c86ef0a-cfff-4257-8981-571b1ce7fb9b.png" class="w-full h-full object-cover">
             </div>
-            <div class="rounded-xl shadow-lg overflow-hidden h-80 bg-white">
-                <img src="1776913042824_1---7a28586d-1902-40f1-93d1-d9d5090c3c5f.png" class="w-full h-full object-contain">
+            <div class="rounded-xl shadow-lg overflow-hidden h-72">
+                <img src="1776913042824_1---7a28586d-1902-40f1-93d1-d9d5090c3c5f.png" class="w-full h-full object-cover">
             </div>
-            <div class="rounded-xl shadow-lg overflow-hidden h-80 bg-white">
-                <img src="1776913046413_1---986c26bb-e67c-4e1b-ad23-6899439a030d.png" class="w-full h-full object-contain">
+            <div class="rounded-xl shadow-lg overflow-hidden h-72">
+                <img src="1776913046413_1---986c26bb-e67c-4e1b-ad23-6899439a030d.png" class="w-full h-full object-cover">
             </div>
         </div>
 
@@ -70,11 +75,11 @@
         <h2 class="text-3xl font-bold text-gray-900 nav-font mb-8 border-l-4 border-wood pl-4">Custom Trucks & Specialties</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
-                <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-lg h-96 w-full object-contain mb-4">
+                <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-lg h-80 w-full object-cover mb-4">
                 <h3 class="text-xl font-bold text-suthorn">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
             </div>
             <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
-                <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-lg h-96 w-full object-contain mb-4">
+                <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-lg h-80 w-full object-cover mb-4">
                 <h3 class="text-xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
             </div>
         </div>
