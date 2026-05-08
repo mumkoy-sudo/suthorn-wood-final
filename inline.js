@@ -97,7 +97,7 @@ const footerCode = `<!-- Footer (Refined Version from P'Mum) -->
                         </li>
                         <li class="flex items-center">
                             <i class="fa-brands fa-line text-[#FFD700] mr-4 w-5 text-xl"></i>
-                            <span>ID: suthorn.kd</span>
+                            <a href="https://line.me/ti/p/~suthorn.kd" target="_blank" class="hover:text-white transition">ID: suthorn.kd</a>
                         </li>
                     </ul>
                 </div>
