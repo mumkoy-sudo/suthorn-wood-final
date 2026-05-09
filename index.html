@@ -9,13 +9,19 @@
     <meta name="description" content="โรงไม้สุธร (Suthorn Timber) ผู้จำหน่ายไม้แปรรูป ไม้โครงสร้าง ไม้แผ่นใหญ่ (Live-edge) และบริการรับสั่งทำชิ้นงานไม้คุณภาพระดับสากล ประสบการณ์กว่า 45 ปี จัดส่งทั่วประเทศ">
     <meta name="keywords" content="โรงเลื่อย, โรงไม้, ไม้แปรรูป, ไม้สัก, ไม้เนื้อแข็ง, ไม้แผ่นใหญ่, Live edge, งานไม้สั่งทำ, ต่อเรือ, พื้นไม้, ไม้ปูระเบียง, สมุทรปราการ">
     <meta name="author" content="Suthorn Timber Co., Ltd.">
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="โรงไม้สุธร | สั่งทำไม้แปรรูปและงานไม้พรีเมียมครบวงจร">
+    <meta property="og:description" content="ศูนย์รวมงานไม้อุตสาหกรรม บริการไม้แปรรูปโครงสร้างและงานตกแต่งภายในระดับไฮเอนด์ ด้วยเครื่องจักรมาตรฐานและประสบการณ์ฝีมือช่างกว่า 45 ปี">
+    <meta property="og:image" content="https://suthorn.surge.sh/bg_hero_new.jpg">
+    <meta property="og:url" content="https://suthorn.surge.sh/">
+    <meta property="og:type" content="website">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } }, fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'], heading: ['Bai Jamjuree', 'serif'], modern: ['Kanit', 'sans-serif'], } } } }
+            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } }, fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'], heading: ['Bai Jamjuree', 'serif'], } } } }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Kanit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,42 +30,37 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <!-- 1. HERO SECTION (Grand Design Style, Original Content) -->
-    <section class="relative h-[650px] md:h-[850px] flex items-center bg-[#111] overflow-hidden ">
+    <!-- 1. HERO SECTION (หน้าแรกอลังการอยู่แล้ว เพิ่มความชัดเจนของตัวอักษร) -->
+    <section class="relative h-[600px] md:h-[800px] flex items-center bg-[#111] overflow-hidden ">
         <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat scale-105" style="background-image: url('hero_panoramic.jpg');"></div>
-        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
-            <!-- Glassmorphism Container (สไตล์ตามแบบ แต่ข้อความเดิม 100%) -->
-            <div class="max-w-2xl bg-black/60 backdrop-blur-md p-8 md:p-14 rounded-[30px] border border-white/10 shadow-2xl">
-                
-                <div class="inline-flex items-center bg-wood/90 text-white text-xs md:text-sm font-bold px-5 py-2 mb-8 tracking-[0.1em] uppercase rounded-lg shadow-lg">
-                    อุตสาหกรรมชิ้นไม้คุณภาพ
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center bg-wood/90 text-white text-sm md:text-base font-bold px-6 py-2 mb-8 tracking-[0.2em] uppercase shadow-2xl rounded-full border border-white/20">
+                    <i class="fa-solid fa-star mr-2 text-yellow-400"></i> อุตสาหกรรมชิ้นไม้คุณภาพ
                 </div>
-
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-6 text-white font-modern drop-shadow-lg">
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 text-white nav-font drop-shadow-2xl">
                     ความเชี่ยวชาญ<br>
-                    <span class="text-4xl md:text-6xl font-medium opacity-90">ในทุกสัมผัสของงานไม้</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-wood-light via-white to-wood-light font-semibold italic">ในทุกสัมผัสของงานไม้</span>
                 </h1>
-
-                <div class="space-y-4 mb-10">
-                    <p class="text-lg md:text-xl text-gray-100 font-light leading-relaxed font-modern">
-                        - อุตสาหกรรมงานไม้คุณภาพและคลังไม้ซุงขนาดใหญ่พิเศษ
-                    </p>
-                    <p class="text-lg md:text-xl text-gray-100 font-light leading-relaxed font-modern">
-                        - โรงไม้สุธร เรามีไม้สัก ไม้ตะเคียนทอง ไม้เต็ง ไม้ยาง และไม้เนื้อแข็งอื่นๆ พิเศษให้เลือกมากมาย พร้อมบริการแปรรูปไม้ ขนาดตามต้องการ และมีช่างไม้ชำนาญการไว้บริการ
+                <div class="w-32 h-2 bg-wood mb-8 rounded-full shadow-lg"></div>
+                <div class="max-w-2xl bg-black/30 backdrop-blur-sm p-6 rounded-xl border-l-4 border-wood shadow-xl">
+                    <p class="text-xl md:text-2xl text-gray-100 font-medium leading-relaxed space-y-3">
+                        <span class="block">- อุตสาหกรรมงานไม้คุณภาพและคลังไม้ซุงขนาดใหญ่พิเศษ</span>
+                        <span class="block">- โรงไม้สุธร เรามีไม้สัก ไม้ตะเคียนทอง ไม้เต็ง ไม้ยาง และไม้เนื้อแข็งอื่นๆ พิเศษให้เลือกมากมาย พร้อมบริการแปรรูปไม้ ขนาดตามต้องการ และมีช่างไม้ชำนาญการไว้บริการ</span>
                     </p>
                 </div>
-
-                <a href="services.html" class="inline-flex items-center bg-wood hover:bg-wood-dark text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl group font-modern">
-                    บริการของเรา
-                    <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform"></i>
-                </a>
+                <div class="mt-12 flex gap-6">
+                    <a href="services.html" class="bg-wood hover:bg-wood-dark text-white px-10 py-5 text-xl font-bold transition-all duration-500 shadow-[0_10px_30px_rgba(139,69,19,0.4)] flex items-center nav-font rounded-lg hover:-translate-y-1">
+                        บริการของเรา <i class="fa-solid fa-arrow-right ml-4"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 2. Heritage Section (กู้คืนตามรูปวงแดง) -->
+    <!-- 2. Heritage Section -->
     <section class="py-24 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2 relative group">
@@ -86,7 +87,7 @@
         </div>
     </section>
 
-    <!-- 3. Highlight Projects (กู้คืนตามรูปวงแดง) -->
+    <!-- 3. Highlight Projects -->
     <section class="py-24 bg-paper">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
