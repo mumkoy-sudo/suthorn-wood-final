@@ -96,6 +96,10 @@ const footerCode = `<!-- Footer (Refined Version from P'Mum) -->
                             <span>02-707-3428-9 , 061-072-1828</span>
                         </li>
                         <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-[#FFD700] mr-4 w-5"></i>
+                            <a href="mailto:suthorn.kd@gmail.com" class="hover:text-white transition">suthorn.kd@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
                             <i class="fa-brands fa-line text-[#FFD700] mr-4 w-5 text-xl"></i>
                             <a href="https://line.me/ti/p/~suthorn.kd" target="_blank" class="hover:text-white transition">ID: suthorn.kd</a>
                         </li>
