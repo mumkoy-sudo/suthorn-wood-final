@@ -4,32 +4,18 @@
     <meta charset="UTF-8">
     <title>ผลิตภัณฑ์ของเรา | SUTHORN TIMBER</title>
     
-    <!-- SEO Optimization Meta Tags (updated: 2026-04-28 22:32) -->
+    <!-- SEO Optimization Meta Tags -->
     <meta name="description" content="โรงไม้สุธร (Suthorn Timber) ผู้จำหน่ายไม้แปรรูป ไม้โครงสร้าง ไม้แผ่นใหญ่ (Live-edge) และบริการรับสั่งทำชิ้นงานไม้คุณภาพระดับสากล ประสบการณ์กว่า 45 ปี จัดส่งทั่วประเทศ">
     <meta name="keywords" content="โรงเลื่อย, โรงไม้, ไม้แปรรูป, ไม้สัก, ไม้เนื้อแข็ง, ไม้แผ่นใหญ่, Live edge, งานไม้สั่งทำ, ต่อเรือ, พื้นไม้, ไม้ปูระเบียง, สมุทรปราการ">
     <meta name="author" content="Suthorn Timber Co., Ltd.">
-    <!-- Open Graph for Social Media (Facebook, Line) -->
-    <meta property="og:title" content="โรงไม้สุธร | สั่งทำไม้แปรรูปและงานไม้พรีเมียมครบวงจร">
-    <meta property="og:description" content="ศูนย์รวมงานไม้อุตสาหกรรม บริการไม้แปรรูปโครงสร้างและงานตกแต่งภายในระดับไฮเอนด์ ด้วยเครื่องจักรมาตรฐานและประสบการณ์ฝีมือช่างกว่า 45 ปี">
-    <meta property="og:image" content="https://suthorn.surge.sh/bg_hero_new.jpg">
-    <meta property="og:url" content="https://suthorn.surge.sh/">
-    <meta property="og:type" content="website">
-    <!-- End SEO Meta -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', },
-                        wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', },
-                        paper: { DEFAULT: '#f4f1ea', white: '#ffffff', }
-                    }
-                }
-            }
+            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } }, fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'], heading: ['Bai Jamjuree', 'serif'], } } } }
         }
     </script>
 </head>
@@ -38,60 +24,91 @@
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <section class="relative pt-16 md:pt-24 pb-20 bg-suthorn">
-        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('1776913002043_1---e0ae2b66-c898-48ed-953e-5febe0300ad1.jpg');"></div>
+    <!-- ผลิตภัณฑ์ Header (บังคับสีเขียวเข้ม และ สัดส่วนตามรูป 1 เป๊ะๆ) -->
+    <section class="relative pt-32 pb-48 bg-[#1b4332] overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 bg-[url('1776913002043_1---e0ae2b66-c898-48ed-953e-5febe0300ad1.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay scale-110"></div>
+        <!-- Strong Gradient to match the dark green look of services page -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-[#1b4332]/80 to-[#1b4332]"></div>
+        
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white nav-font mb-4">ผลิตภัณฑ์ของเรา</h1>
-            <div class="w-16 h-1 bg-wood mx-auto mb-6"></div>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto">คลังไม้แปรรูปคุณภาพสูง และสินค้าพิเศษ พร้อมตอบสนองความต้องการของลูกค้าทุกรูปแบบ</p>
+            <!-- 2. อักษรภาษาอังกฤษตัวบาง สีขาวด้านบนสุด -->
+            <span class="inline-block text-white/60 tracking-[0.4em] uppercase text-sm mb-4 font-light">Premium Wood Selection</span>
+            
+            <!-- 3. หัวข้อภาษาไทย ตัวหนา สีขาว ขนาดใหญ่ยักษ์ -->
+            <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลิตภัณฑ์ของเรา</h1>
+            
+            <!-- 4. เส้นคั่นบางๆ สีส้มทอง ใต้หัวข้อ -->
+            <div class="w-48 h-[3px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
+            
+            <!-- 5. คำบรรยายตัวบาง สีขาวนวลด้านล่างสุด -->
+            <p class="text-white/90 text-2xl md:text-4xl font-light leading-relaxed drop-shadow-md">
+                คลังไม้แปรรูปคุณภาพสูง และสินค้าพิเศษ พร้อมตอบสนองความต้องการของลูกค้าในทุกรูปแบบ
+            </p>
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="py-32">
         <div class="max-w-7xl mx-auto px-4">
             
             <!-- Category 1 -->
-            <div class="flex flex-col md:flex-row gap-12 items-center mb-24">
+            <div class="flex flex-col md:flex-row gap-20 items-center mb-40">
                 <div class="md:w-1/2">
-                    <img src="new_live_edge_slabs.jpg" class="rounded-lg shadow-xl w-full h-[400px] object-cover" alt="ไม้แผ่นใหญ่ ไม้หน้าโต๊ะ Live-edge slabs โรงไม้สุธร">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-wood translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl opacity-80"></div>
+                        <img src="new_live_edge_slabs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover">
+                    </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-4">ไม้แผ่นใหญ่ลวดลายธรรมชาติ (Live-Edge Slabs)</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
-                    <ul class="space-y-2 text-gray-700 mb-8">
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> ควบคุมความชื้นด้วยเตาอบมาตรฐาน</li>
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> มีระบบจัดเก็บและจำแนกลายไม้ต่อแผ่น</li>
-                    </ul>
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight">ไม้แผ่นใหญ่ลวดลายธรรมชาติ</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">แผ่นไม้อายุยาวนานที่เลื่อยจากท่อนซุงขนาดใหญ่พิเศษ เก็บรักษาขอบไม้ตามธรรมชาติ (Live-edge) เหมาะสำหรับงานทำหน้าท็อปโต๊ะอาหาร โต๊ะประชุม หรือเคาน์เตอร์ยาว เรามีสต็อกไม้แผ่นใหญ่หลากหลายมิติพร้อมให้คุณเลือกสรร</p>
                 </div>
             </div>
 
-            <!-- Category 2: ไม้เพื่อทำโครงสร้าง (Updated per scan) -->
-            <div class="flex flex-col md:flex-row-reverse gap-12 items-center mb-24">
+            <!-- Category 2 -->
+            <div class="flex flex-col md:flex-row-reverse gap-20 items-center mb-40">
                 <div class="md:w-1/2">
-                    <img src="new_structural_timber_logs.jpg" class="rounded-lg shadow-xl w-full h-[400px] object-cover" alt="ไม้เพื่อทำโครงสร้าง เสาไม้ คานไม้ ทนทานพิเศษ">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-suthorn translate-x-[-1rem] translate-y-4 rounded-2xl -z-10 shadow-xl opacity-20"></div>
+                        <img src="new_structural_timber_logs.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover">
+                    </div>
                 </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-2">ไม้เพื่อทำโครงสร้าง (Structural Timber)</h2>
-                    <p class="text-wood font-bold mb-4">สามารถแปรรูปได้ตามขนาดที่ต้องการ</p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">ไม้โครงสร้างหน้าตัดขนาดใหญ่ ทนทาน รองรับน้ำหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้านไม้ เสา คาน และงานวิศวกรรมทางน้ำ</p>
-                    <ul class="space-y-2 text-gray-700 mb-8">
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> ตัดตามสเปกและลดการแตกร้าวที่หัวไม้</li>
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> รองรับงานก่อสร้างสเกลอุตสาหกรรม</li>
+                <div class="md:w-1/2 text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8">ไม้เพื่อแปรรูปทำโครงสร้าง</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">ไม้โครงสร้างหน้าตัดขนาดใหญ่ สามารถแปรรูปได้ตามขนาดที่ต้องการ ทนทาน รองรับน้ำหนักได้ดีเยี่ยม เหมาะสำหรับโครงสร้างบ้าน ไม้เสาคานและงานวิศวกรรมทางน้ำ</p>
+                    <ul class="space-y-4 text-gray-700 text-xl font-light inline-block">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-wood"></i>
+                            <span>ตัดตามสเปกและลดการแตกร้าวที่หัวไม้</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-wood"></i>
+                            <span>รองรับงานก่อสร้างสเกลอุตสาหกรรม</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Category 3 -->
-            <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex flex-col md:flex-row gap-20 items-center">
                 <div class="md:w-1/2">
-                    <img src="new_architectural_woodwork.jpg" class="rounded-lg shadow-xl w-full h-[400px] object-cover" alt="ไม้หน้าเล็ก ไม้ระแนง สำหรับงานตกแต่งภายในและสถาปัตยกรรม">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-suthorn translate-x-4 translate-y-4 rounded-2xl -z-10 shadow-xl opacity-20"></div>
+                        <img src="new_architectural_woodwork.jpg" class="rounded-2xl shadow-2xl w-full h-[500px] object-cover">
+                    </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold text-suthorn nav-font mb-4">ไม้แปรรูปตกแต่ง สีทองตามธรรมชาติ (Architectural Woodwork)</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">ไม้เนื้อเนียนสีอ่อนสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการตากลม และอบไม้เพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
-                    <ul class="space-y-2 text-gray-700 mb-8">
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> ผิวสัมผัสเนียนเรียบ เข้าทำสีได้ง่าย</li>
-                        <li><i class="fa-solid fa-check text-wood mr-2"></i> เหมาะสำหรับกรุผนังและฝ้าเพดานระดับไฮเอนด์</li>
+                    <h2 class="text-4xl md:text-5xl font-bold text-suthorn nav-font mb-8 leading-tight text-left">ไม้แปรรูปตกแต่ง</h2>
+                    <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">ไม้สักทองลายธรรมชาติสำหรับการตกแต่งภายใน ตีร่องหรือเซาะร่องได้อย่างแม่นยำ ผ่านกระบวนการอบไม้และผึ่งลม เพื่อความเสถียรสูงสุด ไม่บิดโก่งเมื่อติดตั้ง</p>
+                    <ul class="space-y-4 text-gray-700 text-xl font-light">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-wood"></i>
+                            <span>ผิวสัมผัสเนียนเรียบ เข้าทำสีได้ง่าย</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-wood"></i>
+                            <span>เหมาะสำหรับงานตกแต่งระดับไฮเอนด์</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -103,19 +120,5 @@
     <div id="footer-container"></div>
 
     <script src="inline.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Active link logic
-            const title = document.title;
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(l => {
-                const text = l.textContent.trim();
-                if (title.includes(text) || (text === 'หน้าแรก' && title.includes('Classic'))) {
-                    l.classList.add('text-suthorn', 'border-suthorn', 'font-bold');
-                    l.classList.remove('text-gray-600', 'border-transparent');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

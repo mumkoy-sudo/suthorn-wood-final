@@ -3,36 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>บริการของเรา | SUTHORN TIMBER</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', },
-                        wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', },
-                        paper: { DEFAULT: '#f4f1ea', white: '#ffffff', }
-                    }
-                }
-            }
+            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } } } }
         }
     </script>
+    <style>
+        .modern-font { font-family: 'Kanit', 'IBM Plex Sans Thai', sans-serif; }
+    </style>
 </head>
-<body class="text-gray-800 antialiased bg-paper">
+<body class="text-gray-800 antialiased bg-[#fdfbf7]">
     
     <!-- HEADER INJECTED -->
     <div id="header-container"></div>
 
-    <section class="relative pt-16 md:pt-24 pb-20 bg-suthorn">
-        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('warehouse_inside.jpg');"></div>
-        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white nav-font mb-4">บริการของเรา</h1>
-            <div class="w-16 h-1 bg-wood mx-auto mb-6"></div>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto">ทางเลือกที่ครบวงจรสำหรับทุกความต้องการเรื่องงานไม้อุตสาหกรรม</p>
+    <!-- Services Header (อลังการตามวงแดง) -->
+    <section class="relative pt-32 pb-48 bg-suthorn overflow-hidden">
+        <div class="absolute inset-0 bg-[url('1776913002189_1---06273122-01e2-4428-b3e2-963ea775ad56.jpg')] bg-cover bg-center opacity-40 mix-blend-overlay scale-110"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-suthorn-dark/40 to-suthorn-dark/90"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <span class="inline-block text-wood-light tracking-[0.4em] uppercase text-sm mb-6 font-bold">Standard of Excellence</span>
+            <h1 class="text-6xl md:text-8xl font-bold text-white nav-font mb-8 drop-shadow-2xl">บริการมาตรฐานระดับสากล</h1>
+            <div class="w-48 h-2 bg-wood mx-auto mb-10 rounded-full shadow-lg"></div>
+            <p class="text-gray-100 text-xl md:text-3xl font-light max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+                จากเครื่องเลื่อยอุตสาหกรรมในโรงงาน สู่การติดตั้งที่หน้างานด้วยช่างฝีมือ
+            </p>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="py-32 max-w-7xl mx-auto px-4 -mt-24 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+             <!-- Card 1 -->
+             <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-comments"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">ให้คำปรึกษาจัดหาไม้</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">ประเมินและแนะนำพันธุกรรมไม้ที่เหมาะสมกับงานก่อสร้างและการตกแต่ง เพื่อความยั่งยืนของโครงสร้าง</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-ruler-combined"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">ออกแบบและคำนวณการใช้ไม้</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">บริการร่างแบบและปรับสัดส่วนโครงสร้าง คำนวณการใช้ไม้อย่างคุ้มค่ามากที่สุด</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-10 md:p-14 border-t-8 border-wood shadow-2xl hover:-translate-y-4 transition-all duration-500 rounded-b-xl group">
+                <div class="text-6xl text-suthorn mb-8 group-hover:scale-110 transition-transform"><i class="fa-solid fa-hammer"></i></div>
+                <h3 class="text-3xl font-bold text-suthorn mb-6 nav-font">บริการประกอบชิ้นงาน</h3>
+                <p class="text-gray-600 text-xl font-light leading-relaxed">ขึ้นโครงสร้างและประกอบไม้ผสมโลหะ รองรับการดัดโค้ง งานเข้าลิ่ม และเฟอร์นิเจอร์สั่งพิเศษ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Workshop Process (เก๋าเกม Style, Original Content) -->
+    <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-20">
+            <div class="lg:w-1/2">
+                <div class="mb-10">
+                    <h2 class="text-5xl md:text-7xl font-bold text-suthorn modern-font leading-[1.2]">ความเชี่ยวชาญ<br>ในทุกขั้นตอน</h2>
+                </div>
+                <p class="text-gray-700 text-2xl mb-12 leading-relaxed modern-font font-light">
+                    บริษัทของเราให้ความใส่ใจในการทำงานของทีมช่างตั้งแต่ การขึ้นรูป การเคลือบทำสี ไปจนถึงกำหนดเวลาในการส่งมอบงานที่เที่ยงตรง
+                </p>
+                <!-- ภาพเล็ก 2 ภาพเรียงคู่กัน -->
+                <div class="grid grid-cols-2 gap-6 mt-12">
+                    <img src="1776913002322_1---760db1dc-42e0-414b-80ff-72aec0f02747.jpg" class="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition-transform duration-500">
+                    <img src="1776913002963_1---4402a14b-2f84-46ca-b789-a398e6a32fbf.jpg" class="rounded-xl shadow-lg object-cover h-64 w-full hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+            <!-- ภาพใหญ่ 1 ภาพฝั่งขวา -->
+            <div class="lg:w-1/2 relative mt-10 lg:mt-0 self-stretch">
+                <div class="absolute inset-0 bg-suthorn translate-x-6 translate-y-6 rounded-3xl opacity-10"></div>
+                <img src="file_287---627cf3aa-5010-448d-aead-db0b2a5ef258.jpg" class="relative z-10 rounded-3xl shadow-3xl h-full min-h-[600px] w-full object-cover">
+            </div>
         </div>
     </section>
 

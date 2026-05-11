@@ -10,45 +10,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', },
-                        wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', },
-                        paper: { DEFAULT: '#f4f1ea', white: '#ffffff', }
-                    }
-                }
-            }
+            theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } }, fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'], heading: ['Bai Jamjuree', 'serif'], } } } }
         }
     </script>
 </head>
 <body class="text-gray-800 antialiased bg-paper">
-    
-    <!-- HEADER INJECTED -->
     <div id="header-container"></div>
-
-    <section class="relative pt-16 md:pt-24 pb-20 bg-suthorn">
-        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('warehouse_inside.jpg');"></div>
+    <section class="relative pt-32 pb-48 bg-[#1b4332] overflow-hidden">
+        <div class="absolute inset-0 bg-[url('warehouse_inside.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay scale-110"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-[#1b4332]/80 to-[#1b4332]"></div>
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white nav-font mb-4">ผลงานของเรา</h1>
-            <div class="w-16 h-1 bg-wood mx-auto mb-6"></div>
-            <p class="text-gray-300 text-lg max-w-2xl mx-auto">รวบรวมความภาคภูมิใจและงานฝีมือคุณภาพระดับพรีเมียมจากโรงไม้สุธร</p>
+            <span class="inline-block text-white/60 tracking-[0.5em] uppercase text-sm mb-4 font-light">The Masterpiece Gallery</span>
+            <h1 class="text-7xl md:text-9xl font-bold text-white nav-font mb-8 drop-shadow-2xl">ผลงานของเรา</h1>
+            <div class="w-48 h-[2px] bg-[#B5651D] mx-auto mb-10 rounded-full shadow-lg"></div>
+            <p class="text-white/90 text-2xl md:text-4xl font-light italic leading-relaxed drop-shadow-md">"จากไม้ซุงคุณภาพสูง สู่ผลงานที่เราภาคภูมิใจ"</p>
         </div>
     </section>
-
-    <!-- CONTENT GOES HERE -->
-    <section class="py-20">
+    <section class="py-32">
         <div class="max-w-7xl mx-auto px-4">
-            <!-- (Content of masterpiece would be here, but we focus on naming for now) -->
-             <div class="text-center py-20 text-gray-400 font-light">
-                [ ส่วนแสดงภาพผลงานกำลังถูกอัปเดตตามรอยแก้คุณตา ]
-             </div>
+            <div class="mb-32">
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Maritime & Luxury Yachts</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913047013_1---6b677658-0eb8-4bae-bb87-f51c065fb365.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913047011_1---5378e605-5044-451f-af98-309655009c16.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-xl shadow-2xl overflow-hidden border border-black h-[500px] bg-white">
+                        <img src="1776913001352_1---2b70bc8d-148b-4095-87d0-c540253b2829.jpg" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-32">
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Industrial & Boat Building</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913044438_1---7c86ef0a-cfff-4257-8981-571b1ce7fb9b.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913042824_1---7a28586d-1902-40f1-93d1-d9d5090c3c5f.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-none shadow-2xl overflow-hidden border border-black flex-1 min-h-[300px]">
+                        <img src="1776913046413_1---986c26bb-e67c-4e1b-ad23-6899439a030d.png" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ส่วนงานรถบรรทุก (เพิ่มหัวข้อตามวงแดง) -->
+            <div class="mb-32">
+                <h2 class="text-4xl font-bold text-suthorn nav-font mb-12 border-l-8 border-wood pl-6">| Custom Trucks & Specialties</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center items-start">
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                        <img src="1776913001040_1---13f72e23-f6c2-480a-9b5b-09ef3c41aff0.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                        <h3 class="text-3xl font-bold text-suthorn nav-font">รถบรรทุกไม้คลาสสิกขัดเงา</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl border border-black/5">
+                        <img src="1776913000400_1---f267985f-6a5e-45ce-96f3-8ac9f4afe0b2.jpg" class="rounded-xl h-[450px] w-full object-cover mb-8">
+                        <h3 class="text-3xl font-bold text-suthorn nav-font">พื้นกระบะไม้เนื้อแข็งพิเศษพร้อมงานเคลือบ</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- FOOTER INJECTED -->
     <div id="footer-container"></div>
-
     <script src="inline.js"></script>
 </body>
 </html>
