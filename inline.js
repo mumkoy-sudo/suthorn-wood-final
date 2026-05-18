@@ -63,6 +63,7 @@ const footerCode = `<!-- Footer (Refined Version from P'Mum) -->
                     <div class="border-l-4 border-[#FFD700] pl-4 py-1 mb-8 flex items-center gap-4">
                         <img src="brand_logo.jpg" class="h-14 w-auto rounded bg-white p-1">
                         <span class="text-3xl font-bold text-[#FFD700] tracking-tight nav-font">บริษัท สุธร จำกัด</span>
+                        <span class="block text-xl font-medium text-[#d2b48c] tracking-[0.2em] uppercase mt-1">SUTHORN TIMBER</span>
                     </div>
                     <p class="text-white font-light leading-relaxed pr-8 text-lg">
                         โรงไม้สุธร ผู้ผลิตและจัดจำหน่ายไม้แปรรูปและงานไม้สั่งทำ สเกล อุตสาหกรรมและงานฝีมือคุณภาพสูง ด้วยประสบการณ์กว่า 45 ปี และเครื่องจักรที่ได้มาตรฐานระดับสากล
