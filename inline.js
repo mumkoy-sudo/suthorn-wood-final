@@ -28,6 +28,7 @@ const headerCode = `<!-- Header Template Fragment -->
                     <a href="products.html" class="nav-link text-gray-600 hover:text-wood font-medium transition-all duration-300">ผลิตภัณฑ์ของเรา</a>
                     <a href="services.html" class="nav-link text-gray-600 hover:text-wood font-medium transition-all duration-300">บริการของเรา</a>
                     <a href="masterpiece.html" class="nav-link text-gray-600 hover:text-wood font-medium transition-all duration-300">ผลงานของเรา</a>
+                    <a href="clients.html" class="nav-link text-gray-600 hover:text-wood font-medium transition-all duration-300">ลูกค้าของเรา</a>
                     <a href="quote.html" class="bg-[#1b4332] hover:bg-wood hover:text-white text-white px-6 py-3 rounded-md font-medium transition-all duration-500 shadow-md ml-4 flex items-center group">
                         ขอใบเสนอราคา <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
@@ -49,6 +50,7 @@ const headerCode = `<!-- Header Template Fragment -->
                 <a href="products.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ผลิตภัณฑ์ของเรา</a>
                 <a href="services.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">บริการของเรา</a>
                 <a href="masterpiece.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ผลงานของเรา</a>
+                <a href="clients.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ลูกค้าของเรา</a>
                 <a href="quote.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-suthorn text-center shadow-md">ขอใบเสนอราคา</a>
             </div>
         </div>
@@ -77,6 +79,7 @@ const footerCode = `<!-- Footer (Refined Version from P'Mum) -->
                         <li><a href="products.html" class="hover:text-[#FFD700] transition">ผลิตภัณฑ์ของเรา</a></li>
                         <li><a href="services.html" class="hover:text-[#FFD700] transition">บริการของเรา</a></li>
                         <li><a href="masterpiece.html" class="hover:text-[#FFD700] transition">ผลงานของเรา</a></li>
+                        <li><a href="clients.html" class="hover:text-[#FFD700] transition">ลูกค้าของเรา</a></li>
                     </ul>
                 </div>
                 
