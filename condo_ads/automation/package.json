@@ -1,0 +1,15 @@
+{
+  "name": "condo-ad-automation",
+  "version": "1.0.0",
+  "description": "Auto-post condo rental ads — ณรงค์ (พี่ม่ำ)",
+  "main": "run_all.sh",
+  "scripts": {
+    "post:all": "bash run_all.sh",
+    "post:livinginsider": "node post_livinginsider.js",
+    "post:ddproperty": "node post_ddproperty.js",
+    "post:facebook": "node post_facebook.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
