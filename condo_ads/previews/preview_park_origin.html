@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตัวอย่างโฆษณา — Park Origin Chula-Samyan</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; padding: 20px; }
+  h1 { text-align:center; color:#444; margin: 20px 0 30px; font-size:18px; }
+
+  /* ===== FACEBOOK POST ===== */
+  .fb-post { background: white; border-radius: 8px; max-width: 500px; margin: 0 auto 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow: hidden; }
+  .fb-header { display: flex; align-items: center; padding: 12px 16px; }
+  .fb-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #1a5276, #2e86c1); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px; margin-right: 10px; }
+  .fb-name { font-weight: 600; font-size: 14px; color: #1c1e21; }
+  .fb-meta { font-size: 12px; color: #65676b; }
+  .fb-body { padding: 0 16px 12px; font-size: 14px; color: #1c1e21; line-height: 1.6; }
+  .fb-body .price { font-size: 22px; font-weight: 700; color: #c0392b; margin: 8px 0; }
+  .fb-image { width: 100%; height: 300px; background: linear-gradient(160deg, #0d1b2a 0%, #1b4332 50%, #d4a017 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; position: relative; }
+  .fb-image .badge { position: absolute; top: 12px; right: 12px; background: #d4a017; color: #0d0d0d; font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 20px; letter-spacing: 1px; }
+  .fb-image .proj-name { font-size: 22px; font-weight: 700; letter-spacing: 2px; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .fb-image .proj-sub { font-size: 13px; color: #f0d080; margin-top: 6px; letter-spacing: 1px; }
+  .fb-image .proj-price { font-size: 32px; font-weight: 800; color: #f0d080; margin-top: 16px; text-shadow: 0 0 20px rgba(212,160,23,0.8); }
+  .fb-image .proj-detail { font-size: 12px; color: #ccc; margin-top: 6px; }
+  .fb-image .contact { position: absolute; bottom: 12px; font-size: 12px; color: #f0d080; letter-spacing: 1px; }
+  .fb-actions { display: flex; border-top: 1px solid #e4e6eb; }
+  .fb-actions span { flex: 1; text-align: center; padding: 10px; font-size: 13px; color: #65676b; cursor: pointer; }
+  .fb-actions span:hover { background: #f2f3f5; }
+
+  /* ===== LIVINGINSIDER LISTING ===== */
+  .li-card { background: white; border-radius: 8px; max-width: 700px; margin: 0 auto 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); overflow: hidden; }
+  .li-header { background: #e8321e; color: white; padding: 8px 16px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .li-img { width: 100%; height: 220px; background: linear-gradient(135deg, #1b2631 0%, #154360 40%, #c9a227 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 700; letter-spacing: 3px; position: relative; }
+  .li-img .li-badge { position: absolute; top: 10px; left: 10px; background: #e8321e; color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 3px; }
+  .li-body { padding: 16px; }
+  .li-title { font-size: 16px; font-weight: 700; color: #222; margin-bottom: 6px; }
+  .li-price { font-size: 24px; font-weight: 800; color: #e8321e; margin-bottom: 12px; }
+  .li-details { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+  .li-detail-item { display: flex; align-items: center; gap: 5px; font-size: 13px; color: #555; }
+  .li-icon { width: 18px; height: 18px; background: #eee; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+  .li-desc { font-size: 13px; color: #666; line-height: 1.7; border-top: 1px solid #eee; padding-top: 12px; }
+  .li-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .li-tag { background: #f0f0f0; color: #555; font-size: 11px; padding: 3px 10px; border-radius: 20px; }
+  .li-contact { background: #fef9e7; border: 1px solid #f9ca24; border-radius: 6px; padding: 12px 16px; margin: 12px 16px 16px; display: flex; justify-content: space-between; align-items: center; }
+  .li-contact .name { font-weight: 700; font-size: 14px; }
+  .li-contact .phone { font-size: 18px; font-weight: 800; color: #e8321e; }
+  .li-contact .line { font-size: 12px; color: #27ae60; font-weight: 600; }
+  .li-btn { display: inline-block; background: #e8321e; color: white; padding: 8px 20px; border-radius: 5px; font-size: 13px; font-weight: 600; text-decoration: none; }
+
+  /* ===== LINE MESSAGE ===== */
+  .line-bg { background: #00c300; padding: 16px; border-radius: 8px; max-width: 380px; margin: 0 auto 40px; }
+  .line-header { color: white; font-weight: 700; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .line-bubble { background: white; border-radius: 8px; padding: 14px; font-size: 13px; color: #333; line-height: 1.8; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  .line-bubble .title { font-size: 15px; font-weight: 700; color: #00c300; margin-bottom: 8px; }
+  .line-bubble .price { font-size: 20px; font-weight: 800; color: #e74c3c; }
+  .line-bubble hr { border: none; border-top: 1px solid #eee; margin: 8px 0; }
+
+  .section-label { text-align: center; font-size: 13px; font-weight: 700; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+</style>
+</head>
+<body>
+
+<h1>🏠 ตัวอย่างโฆษณา: Park Origin Chula-Samyan ⭐ Duplex ชั้น 27</h1>
+
+<!-- FACEBOOK POST -->
+<p class="section-label">Facebook / Instagram Post</p>
+<div class="fb-post">
+  <div class="fb-header">
+    <div class="fb-avatar">ณ</div>
+    <div>
+      <div class="fb-name">ณรงค์ เทคนิรุทธ์ไสย</div>
+      <div class="fb-meta">📍 Bangkok · 🌐 สาธารณะ</div>
+    </div>
+  </div>
+  <div class="fb-body">
+    <p>🏙️ <strong>ให้เช่า คอนโด Park Origin Chula-Samyan ⭐</strong></p>
+    <p>Duplex 2 ชั้น สุดพิเศษ — ชั้น 27 วิวสวนจุฬาฯ เดิน 2 นาทีถึง MRT สามย่าน</p>
+    <p class="price">39,000 บาท/เดือน</p>
+    <p>✅ 1 ห้องนอน Duplex | ชั้น 27 | 24 ตร.ม.<br>
+    ✅ ใกล้ MRT สามย่าน 2 นาที<br>
+    ✅ ใกล้จุฬาฯ โรงพยาบาลจุฬาฯ สามย่านมิตรทาวน์<br>
+    ✅ ตกแต่งพร้อมอยู่ เครื่องใช้ไฟฟ้าครบ<br>
+    📞 081-8327707 | Line: narong.t</p>
+  </div>
+  <div class="fb-image">
+    <div class="badge">⭐ HIGHLIGHT</div>
+    <div class="proj-name">PARK ORIGIN</div>
+    <div class="proj-sub">CHULA · SAMYAN | DUPLEX FLOOR 27</div>
+    <div class="proj-price">39,000 ฿/เดือน</div>
+    <div class="proj-detail">1 Bed Duplex · 24 sqm · MRT 2 min</div>
+    <div class="contact">📱 081-8327707 | LINE: narong.t</div>
+  </div>
+  <div class="fb-actions">
+    <span>👍 ถูกใจ</span>
+    <span>💬 แสดงความคิดเห็น</span>
+    <span>↗️ แชร์</span>
+  </div>
+</div>
+
+<!-- LIVINGINSIDER LISTING -->
+<p class="section-label">Livinginsider / DDproperty</p>
+<div class="li-card">
+  <div class="li-header">🏠 ให้เช่า คอนโด · กรุงเทพฯ · จุฬา-สามย่าน</div>
+  <div class="li-img">
+    <div class="li-badge">ให้เช่า</div>
+    <div style="text-align:center">
+      <div style="font-size:13px; letter-spacing:3px; color:#f0d080; margin-bottom:6px">PARK ORIGIN</div>
+      <div style="font-size:28px; font-weight:800; letter-spacing:4px">CHULA-SAMYAN</div>
+      <div style="font-size:13px; color:#aaa; margin-top:4px">DUPLEX · FLOOR 27 · UNIT 168/247</div>
+    </div>
+  </div>
+  <div class="li-body">
+    <div class="li-title">ให้เช่า Park Origin Chula-Samyan 1 Bed Duplex ชั้น 27 วิวสวนจุฬาฯ พร้อมอยู่</div>
+    <div class="li-price">39,000 บาท / เดือน</div>
+    <div class="li-details">
+      <div class="li-detail-item"><span class="li-icon">🛏</span> 1 ห้องนอน</div>
+      <div class="li-detail-item"><span class="li-icon">🚿</span> 1 ห้องน้ำ</div>
+      <div class="li-detail-item"><span class="li-icon">📐</span> 24 ตร.ม.</div>
+      <div class="li-detail-item"><span class="li-icon">🏢</span> ชั้น 27</div>
+      <div class="li-detail-item"><span class="li-icon">🚇</span> MRT 2 นาที</div>
+    </div>
+    <div class="li-desc">
+      ห้อง Duplex 2 ชั้น สุดพิเศษ ชั้น 27 วิวสวยเหนือสวนจุฬาลงกรณ์มหาวิทยาลัย เดินเพียง 2 นาทีถึงสถานี MRT สามย่าน ใกล้โรงพยาบาลจุฬาลงกรณ์ จุฬาลงกรณ์มหาวิทยาลัย และห้างสามย่านมิตรทาวน์ ตกแต่งพร้อมอยู่ เครื่องใช้ไฟฟ้าครบครัน เงินประกัน 2 เดือน + ล่วงหน้า 1 เดือน สัญญาขั้นต่ำ 1 ปี
+    </div>
+    <div class="li-tags">
+      <span class="li-tag">Duplex</span>
+      <span class="li-tag">ชั้นสูง</span>
+      <span class="li-tag">ใกล้ MRT</span>
+      <span class="li-tag">ตกแต่งแล้ว</span>
+      <span class="li-tag">พร้อมอยู่</span>
+      <span class="li-tag">จุฬา-สามย่าน</span>
+    </div>
+  </div>
+  <div class="li-contact">
+    <div>
+      <div class="name">ณรงค์ (พี่ม่ำ)</div>
+      <div class="line">LINE: narong.t</div>
+    </div>
+    <div style="text-align:right">
+      <div class="phone">081-8327707</div>
+      <a href="#" class="li-btn">📞 ติดต่อ</a>
+    </div>
+  </div>
+</div>
+
+<!-- LINE MESSAGE -->
+<p class="section-label">Line OA / Line Message</p>
+<div class="line-bg">
+  <div class="line-header">🟢 ณรงค์ (พี่ม่ำ) · คอนโดให้เช่า</div>
+  <div class="line-bubble">
+    <div class="title">🏙️ Park Origin Chula-Samyan ⭐</div>
+    <div>ให้เช่า Duplex ชั้น 27 วิวสวนจุฬาฯ</div>
+    <hr>
+    <div>🛏 1 ห้องนอน Duplex | 24 ตร.ม.</div>
+    <div>🏢 ชั้น 27 | ยูนิต 168/247</div>
+    <div>🚇 MRT สามย่าน เดิน 2 นาที</div>
+    <div>🏥 ใกล้โรงพยาบาลจุฬาฯ</div>
+    <div>🛍 สามย่านมิตรทาวน์ใกล้มาก</div>
+    <hr>
+    <div class="price">39,000 บาท/เดือน</div>
+    <div style="font-size:11px; color:#888; margin-top:4px">ประกัน 2 เดือน + ล่วงหน้า 1 เดือน</div>
+    <hr>
+    <div>📞 <strong>081-8327707</strong></div>
+    <div>💬 Line: <strong>narong.t</strong></div>
+    <div style="font-size:11px; color:#27ae60; margin-top:4px">⏰ ตอบกลับภายใน 1 ชั่วโมง</div>
+  </div>
+</div>
+
+</body>
+</html>
