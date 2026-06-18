@@ -55,7 +55,6 @@
                     <a href="products.html" class="nav-link text-gray-600 hover:text-wood border-b-[3px] border-transparent hover:border-wood px-1 py-2 font-medium transition-all duration-300">ผลิตภัณฑ์ของเรา</a>
                     <a href="services.html" class="nav-link text-gray-600 hover:text-wood border-b-[3px] border-transparent hover:border-wood px-1 py-2 font-medium transition-all duration-300">บริการของเรา</a>
                     <a href="masterpiece.html" class="nav-link text-gray-600 hover:text-wood border-b-[3px] border-transparent hover:border-wood px-1 py-2 font-medium transition-all duration-300">ผลงานของเรา</a>
-                    <a href="clients.html" class="nav-link text-gray-600 hover:text-wood border-b-[3px] border-transparent hover:border-wood px-1 py-2 font-medium transition-all duration-300">ลูกค้าของเรา</a>
                     <a href="quote.html" class="bg-suthorn hover:bg-wood hover:text-white text-white px-6 py-2.5 rounded-none font-medium transition-all duration-500 shadow-md ml-4 border border-suthorn-dark flex items-center group">
                         ขอใบเสนอราคา <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
@@ -77,7 +76,6 @@
                 <a href="products.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ผลิตภัณฑ์ของเรา</a>
                 <a href="services.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">บริการของเรา</a>
                 <a href="masterpiece.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ผลงานของเรา</a>
-                <a href="clients.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 border-b border-gray-100">ลูกค้าของเรา</a>
                 <a href="quote.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-suthorn text-center shadow-md">ขอใบเสนอราคา</a>
             </div>
         </div>
@@ -129,11 +127,12 @@
             </div>
             <div class="lg:w-2/3 bg-white p-8 rounded-xl shadow">
                 <div id="form-container">
-                <!-- เปลี่ยนเป็นระบบ Mailto: เปิดโปรแกรมส่งอีเมลยิงตรงเข้า suthorn.kd@gmail.com -->
-                <form id="quote-form" action="mailto:suthorn.kd@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                <!-- ใช้ FormSubmit.co ส่งอีเมลผ่านเซิร์ฟเวอร์ ใช้ได้ทุกเครื่อง ไม่ต้องมีโปรแกรมอีเมล -->
+                <form id="quote-form" action="https://formsubmit.co/suthorn.kd@gmail.com" method="POST" class="space-y-6">
                     <!-- Config for formsubmit.co -->
                     <input type="hidden" name="_subject" value="🔔 ลูกค้าส่งคำขอใบเสนอราคาใหม่ จากเว็บไซต์โรงไม้สุธร">
-                    <input type="hidden" name="_next" value="http://suthorn.surge.sh/quote_success.html">
+                    <input type="hidden" name="_next" value="https://magnificent-lamington-d64acd.netlify.app/quote_success.html">
+                    <input type="hidden" name="_captcha" value="true">
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
@@ -177,14 +176,10 @@
                         <textarea id="cust-detail" name="details" rows="4" class="w-full border-gray-300 rounded-md shadow-sm border p-3 focus:ring-suthorn focus:border-suthorn" placeholder="เช่น ต้องการไม้สำหรับทำพื้นระเบียงขนาด 50 ตารางเมตร..." required></textarea>
                     </div>
 
-                    <div class="flex items-center gap-4">
-                        <button type="submit" id="submit-btn" class="flex-1 bg-suthorn hover:bg-suthorn-dark text-white font-bold py-4 rounded-md transition-colors shadow-md text-lg nav-font flex justify-center items-center">
+                    <div class="flex justify-center">
+                        <button type="submit" id="submit-btn" class="bg-wood hover:bg-wood-dark text-white font-bold py-4 px-12 rounded-md transition-colors shadow-md text-lg nav-font flex justify-center items-center max-w-md">
                             <i class="fa-solid fa-paper-plane mr-2"></i> ส่งข้อมูลขอใบเสนอราคา
                         </button>
-                        
-                        <a href="mailto:suthorn.kd@gmail.com" class="flex-1 bg-wood hover:bg-wood-dark text-white font-bold py-4 rounded-md transition-colors shadow-md text-lg nav-font flex justify-center items-center">
-                            <i class="fa-solid fa-envelope mr-2"></i> ส่งอีเมลหาเราโดยตรง
-                        </a>
                     </div>
                 </form>
             </div>
@@ -217,7 +212,6 @@
                         <li><a href="products.html" class="hover:text-wood-light transition">ผลิตภัณฑ์ของเรา</a></li>
                         <li><a href="services.html" class="hover:text-wood-light transition">บริการของเรา</a></li>
                         <li><a href="masterpiece.html" class="hover:text-wood-light transition">ผลงานของเรา</a></li>
-                        <li><a href="clients.html" class="hover:text-wood-light transition">ลูกค้าของเรา</a></li>
                     </ul>
                 </div>
                 
@@ -303,5 +297,6 @@
         }
     });
 </script>
+
 </body>
 </html>
