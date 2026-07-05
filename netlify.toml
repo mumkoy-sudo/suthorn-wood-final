@@ -1,0 +1,9 @@
+# Netlify configuration for Suthorn Wood live site
+# Live site: https://suthorn.co.th
+# Netlify project: magnificent-lamington-d64acd
+# Canonical source repo: mumkoy-sudo/suthorn-wood-final
+
+[build]
+  publish = "."
+
+# Static HTML site: no build command required.
