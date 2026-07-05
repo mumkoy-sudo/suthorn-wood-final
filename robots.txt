@@ -1,0 +1,11 @@
+# robots.txt for Suthorn Timber (โรงไม้สุธร)
+# https://suthorn.co.th/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://suthorn.co.th/sitemap.xml
+
+# Disallow unnecessary paths (none needed for static site)
+# All pages are indexable
