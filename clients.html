@@ -9,6 +9,28 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "หน้าแรก",
+          "item": "https://suthorn.co.th/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ลูกค้าของเรา",
+          "item": "https://suthorn.co.th/clients.html"
+        }
+      ]
+    }
+    </script>
     <script>
         tailwind.config = {
             theme: { extend: { colors: { suthorn: { DEFAULT: '#1b4332', dark: '#064e3b', light: '#bbf7d0', }, wood: { DEFAULT: '#8b4513', dark: '#5c2e0e', light: '#d2b48c', }, paper: { DEFAULT: '#f4f1ea', white: '#ffffff', } }, fontFamily: { sans: ['IBM Plex Sans Thai', 'sans-serif'], heading: ['Bai Jamjuree', 'serif'], modern: ['Kanit', 'sans-serif'], } } }
